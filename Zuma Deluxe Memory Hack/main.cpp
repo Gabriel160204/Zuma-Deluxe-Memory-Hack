@@ -30,7 +30,7 @@ DWORD GetModule(LPCWSTR ModuleName, DWORD pID)
 	return dGetModule;
 }
 
-DWORD GetPtrAdress(HANDLE phandle, std::vector<DWORD> offsets, DWORD pID, DWORD ModuleNameAdress, DWORD Adress)
+DWORD GetPtrAdress(HANDLE phandle, std::vector<DWORD> offsets, DWORD ModuleNameAdress, DWORD Adress)
 {
 	DWORD PtrAdress = ModuleNameAdress + Adress;
 	for (int i = 0; i < offsets.size(); i++)
